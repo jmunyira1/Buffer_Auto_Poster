@@ -12,6 +12,7 @@ define('BUFFER_TOKEN',   $api_key);
 define('CHANNEL_ID',     $channel_id);
 define('WALL_HAVEN_KEY', $wall_haven_key);
 define('BASE_URL',        $base_url);
+logMessage('Token being used: ' . BUFFER_TOKEN); // add this
 
 const SEED_FILE = __DIR__ . '/wallhaven_seed.txt';
 const LOG_FILE  = __DIR__ . '/buffer_log.txt';
