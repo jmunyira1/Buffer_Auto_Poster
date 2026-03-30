@@ -210,7 +210,7 @@ function createUrls(array $images): string
     return implode(', ', $parts);
 }
 function deleteImages() {
-    $folder = 'wallpapers/';
+    $folder = __DIR__ . '/wallpapers/';
 
     // Get a list of all files in the directory
     $files = glob($folder . '*');

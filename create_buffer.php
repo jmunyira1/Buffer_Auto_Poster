@@ -1,6 +1,6 @@
 <?php
-include ('functions.php');
-include ('envReader.php');
+include(__DIR__ . '/functions.php');
+include(__DIR__ . '/envReader.php');
 loadEnv();
 $api_key        = env('API_KEY');
 $channel_id     = env('CHANNEL_ID');
@@ -25,4 +25,4 @@ $image_s = createUrls($images);
 
 createPost($image_s);
 
-//deleteImages();
+deleteImages();

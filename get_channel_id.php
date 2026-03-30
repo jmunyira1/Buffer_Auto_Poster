@@ -1,5 +1,5 @@
 <?php
-include("envReader.php");
+include(__DIR__ . '/envReader.php');
 loadEnv();
 $api_key = env('API_KEY');
 
