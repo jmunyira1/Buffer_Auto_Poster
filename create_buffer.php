@@ -1,7 +1,7 @@
 <?php
 include(__DIR__ . '/functions.php');
 include(__DIR__ . '/envReader.php');
-loadEnv();
+loadEnv(loadEnv(__DIR__ . '/.env'));
 $api_key        = env('API_KEY');
 $channel_id     = env('CHANNEL_ID');
 $wall_haven_key = env('WALL_HAVEN_KEY');
