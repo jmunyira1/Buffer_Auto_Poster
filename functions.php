@@ -202,8 +202,9 @@ function getPortraitsFromWallhaven(int $count = 6): array
 return $images;}
 function createUrls(array $images): string
 {
+    $base = rtrim(BASE_URL, '/');
     $parts = array_map(
-        fn($image) => '{ url: ' . json_encode(BASE_URL . '/wallpapers/' . $image) . ' }',
+        fn($image) => '{ url: ' . json_encode($base . '/wallpapers/' . $image) . ' }',
         $images
     );
     return implode(', ', $parts);

@@ -20,9 +20,9 @@ const LOG_FILE  = __DIR__ . '/buffer_log.txt';
 $images = getPortraitsFromWallhaven(6);
 
 
-$images = createUrls($images);
+$image_s = createUrls($images);
 
-createPost($images);
+createPost($image_s);
 
 
 deleteImages();
