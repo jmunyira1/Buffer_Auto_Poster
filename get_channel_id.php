@@ -1,6 +1,6 @@
 <?php
 include("envReader.php");
-loadEnv('.env.example');
+loadEnv('.env');
 $api_key = env('API_KEY');
 
 function bufferQuery( $q,$api_key): array
