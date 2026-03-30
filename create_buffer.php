@@ -25,4 +25,4 @@ $image_s = createUrls($images);
 
 createPost($image_s);
 
-deleteImages();
+//deleteImages();
